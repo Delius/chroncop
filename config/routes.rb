@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+
+  root_path -> '/'
+  root_url  -> 'http://localhost:3000/'
+
   root to: 'tips#index'
   devise_for :users
   resources :tips
