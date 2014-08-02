@@ -1,0 +1,43 @@
+<h1>Coping Tips List</h1>
+
+<table>
+
+  <thead >
+    
+
+
+    <tr>
+      <th>TIP TITLE  </th>
+      
+      <th>Condition name </th>
+      <th>Category</th>
+      
+      <th ></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tips.each do |tip| %>
+      <tr>
+        <td ><%= tip.title %></td>
+        
+        <td><%= tip.condition_name.name %></td>
+        <td><%= tip.symptom_name.name %></td>
+       
+
+       
+        <td><%= link_to 'Show', tip, class: 'button tiny radius success' %>
+	<% if user_signed_in? %>
+          <%= link_to 'Edit', edit_tip_path(tip), class: 'button tiny radius success' %>
+          <%= link_to 'Destroy', tip, method: :delete, data: { confirm: 'Are you sure?' }, class: 'button tiny radius alert' %></td>
+        <% end %>
+
+   
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Share your Tip', new_tip_path, class: 'button  radius success' %>

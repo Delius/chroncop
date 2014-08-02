@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  difficulty_level: MyString
+  condition_name_id: 1
+  symptom_name_id: 1
+  tip_type_id: 1
+  what_needed: MyText
+  my_tip: MyText
+
+two:
+  title: MyString
+  difficulty_level: MyString
+  condition_name_id: 1
+  symptom_name_id: 1
+  tip_type_id: 1
+  what_needed: MyText
+  my_tip: MyText
