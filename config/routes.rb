@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root_path -> '/'
-  root_url  -> 'http://localhost:3000/'
+  root_url  -> 'http://agile-coast-9348.herokuapp.com/'
 
   root to: 'tips#index'
   devise_for :users
