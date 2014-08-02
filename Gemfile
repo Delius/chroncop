@@ -11,6 +11,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise', github: 'plataformatec/devise'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'foundation-rails'
+gem 'omniauth'
+gem 'omniauth-twitter', :github => 'arunagw/omniauth-twitter'
 
 group :production do
   gem 'pg', '0.15.1'
